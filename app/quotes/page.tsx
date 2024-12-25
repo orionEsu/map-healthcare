@@ -51,7 +51,6 @@ async function getQuotes(): Promise<Quote[]> {
 				id: 28373,
 			},
 		},
-		// ...
 	];
 }
 

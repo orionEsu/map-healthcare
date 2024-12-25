@@ -17,7 +17,6 @@ export function Review() {
 
 	const transformedData = items.map((item) => {
 		return {
-			// ...item,
 			id: "728ed52f",
 			item: {
 				name: item?.name,

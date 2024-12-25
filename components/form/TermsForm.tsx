@@ -16,7 +16,7 @@ export interface TermFormProps extends StepProps {
 	control: Control<FormData>;
 }
 
-export function TermsForm({ register, control, errors }: TermFormProps) {
+export function TermsForm({ register, control }: TermFormProps) {
 	return (
 		<FormWrapper
 			title="Request for Quotation"

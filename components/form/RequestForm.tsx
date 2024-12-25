@@ -216,7 +216,6 @@ export function RequestForm({ register, control }: RequestFormProps) {
 										<div className="relative w-[140px]">
 											<input
 												type="number"
-												// step="0.01"
 												{...register(
 													`items.${index}.price`,
 													{
@@ -278,7 +277,6 @@ export function RequestForm({ register, control }: RequestFormProps) {
 		</FormWrapper>
 	);
 }
-// add animations between steps and ts types
 
 function AmountField({
 	control,
