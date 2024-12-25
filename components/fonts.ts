@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 
 export const satoshi = localFont({
 	src: [
@@ -50,4 +51,9 @@ export const satoshi = localFont({
 	],
 	display: "swap",
 	variable: "--font-satoshi",
+});
+
+export const inter = Inter({
+	subsets: ["latin"],
+	variable: "--font-inter",
 });
