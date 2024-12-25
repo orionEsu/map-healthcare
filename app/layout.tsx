@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import "./globals.css";
-import { satoshi } from "@/components/fonts";
+import { satoshi, inter } from "@/components/fonts";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={`${satoshi.variable} antialiased !h-dvh overflow-hidden`}
+			className={`${inter.variable} ${satoshi.variable} antialiased !h-dvh overflow-hidden`}
 		>
 			<body>
 				<div id="body">
@@ -26,7 +26,7 @@ export default function RootLayout({
 					<Header />
 					<main
 						id="main"
-						className="overflow-y-scroll bg-white px-8"
+						className="overflow-y-scroll bg-white px-8 pt-8 pb-[110px]"
 					>
 						{children}
 					</main>
