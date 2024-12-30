@@ -124,8 +124,7 @@ export function MultiStepForm() {
 	const [open, setOpen] = React.useState(false);
 
 	const onSubmit = (data: FormData) => {
-		if (isLastStep) setOpen(true);
-
+		next();
 		console.log(data);
 	};
 
@@ -154,13 +153,23 @@ export function MultiStepForm() {
 							>
 								Save as draft
 							</button>
-							<button
-								className="bg-primary-blue rounded-lg px-4 py-2.5 h-10 text-white font-bold text-sm flex items-center w-[168px] justify-center"
-								type="submit"
-								onClick={next}
-							>
-								{isLastStep ? "Submit" : "Continue"}
-							</button>
+							{!isLastStep && (
+								<button
+									className="bg-primary-blue rounded-lg px-4 py-2.5 h-10 text-white font-bold text-sm flex items-center w-[168px] justify-center"
+									type="submit"
+								>
+									Continue
+								</button>
+							)}
+							{isLastStep && (
+								<button
+									className="bg-primary-blue rounded-lg px-4 py-2.5 h-10 text-white font-bold text-sm flex items-center w-[168px] justify-center"
+									type="button"
+									onClick={() => setOpen(true)}
+								>
+									Submit
+								</button>
+							)}
 						</div>
 					</div>
 				</div>

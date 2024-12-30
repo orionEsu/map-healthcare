@@ -254,7 +254,7 @@ const Navigation = () => {
 					</li>
 				))}
 			</ul>
-			<ul className="mt-32">
+			<ul className="mt-8">
 				<li className="list-none">
 					<Nav
 						href={"/support"}

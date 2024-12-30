@@ -15,8 +15,14 @@ export function useMultiStepForm(
 			currentStep === 1
 				? ["items"]
 				: currentStep === 2
-				? ["street", "city", "zipCode"]
-				: ["username", "password"];
+				? [
+						"paymentTerms",
+						"deliverySchedule",
+						"shippingMethod",
+						"leadTime",
+						"deliveryDate",
+				  ]
+				: [];
 
 		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 		// @ts-ignore

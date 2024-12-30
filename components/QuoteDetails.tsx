@@ -129,8 +129,6 @@ export function QuoteDetails({ data }: { data: Quote[] }) {
 							</div>
 						</div>
 
-						<Terms />
-
 						<div className="border border-gray-200 shadow-[0_4px_4px_-2px_rgba(0,0,0,0.04)] pb-6 space-y-4 rounded-[10px]">
 							<h3 className="px-6 py-4 text-gray-800 font-bold text-xl">
 								Item(s)
@@ -162,6 +160,8 @@ export function QuoteDetails({ data }: { data: Quote[] }) {
 								</div>
 							</div>
 						</div>
+
+						<Terms />
 					</div>
 				</div>
 			)}
