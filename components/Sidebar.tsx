@@ -78,7 +78,7 @@ export default function Sidebar() {
 	return (
 		<aside
 			id="sidebar"
-			className="px-2 bg-[#f7f9fc] hidden lg:block"
+			className="px-2 bg-[#f7f9fc] lg:block"
 		>
 			<div className="relative overflow-hidden w-full h-full">
 				<div
