@@ -111,3 +111,12 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.no-scroll::-webkit-scrollbar{
+	display: none;
+}
+
+.no-scroll {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}

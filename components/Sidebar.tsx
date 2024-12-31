@@ -82,7 +82,7 @@ export default function Sidebar() {
 		>
 			<div className="relative overflow-hidden w-full h-full">
 				<div
-					className="absolute inset-0 overflow-scroll mr-0 mb-0"
+					className="no-scroll absolute inset-0 overflow-scroll mr-0 mb-0"
 					id="ScrollBar"
 				>
 					<div className="w-full">
